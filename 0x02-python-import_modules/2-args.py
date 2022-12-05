@@ -9,12 +9,11 @@ if __name__ == "__main__":
         print("{} arguments.".format(i))
     elif i == 1:
         print("{} argument:".format(i))
-        i = 0
+        i = 1
         for arg in sys.argv:
-            if i != 0:
-                print("{}: {}".format(i, arg))
+            print("{}: {}".format(i, arg))
             i += 1
-
+        
     elif i >= 1:
         i = 0
         for arg in sys.argv:
